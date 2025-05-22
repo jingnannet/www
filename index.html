@@ -1,298 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>经南弘 - jingnan.net - 中国文化网站大全</title>
-    <style>
-        body{font-family:Arial; max-width:1200px; margin:0 auto; padding:10px; scroll-behavior:smooth}
-        nav{position:sticky; top:0; background:#fff; z-index:999; box-shadow:0 1px 3px rgba(0,0,0,0.1)}
-        nav ul{display:flex; flex-wrap:wrap; gap:8px; padding:5px 0; margin:0; list-style:none; font-size:12px}
-        .grid{display:grid; grid-template-columns:repeat(4,1fr); gap:6px; font-size:12px}
-        h1{color:#c00; text-align:center; margin:8px 0; font-size:20px}
-        h2{color:#c00; border-bottom:1px solid #c00; padding-bottom:2px; margin:10px 0; font-size:14px}
-        a{color:#444; text-decoration:none; line-height:1.3}
-        a:hover{color:#c00; text-decoration:underline}
-        footer{text-align:center; padding:12px; margin-top:25px; font-size:11px}
-        #searchBox{text-align:center; margin:12px 0}
-        #searchInput{padding:4px; width:300px; border:1px solid #ddd; font-size:13px}
-        @media (max-width:768px){.grid{grid-template-columns:1fr}}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>出尘入画 chenhua.net 行到水穷处，坐看云起时</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#philosophy">哲学思想</a></li>
-            <li><a href="#literature">文学典籍</a></li>
-            <li><a href="#art">艺术传承</a></li>
-            <li><a href="#crafts">传统技艺</a></li>
-            <li><a href="#festival">节庆民俗</a></li>
-            <li><a href="#medicine">中医智慧</a></li>
-            <li><a href="#museum">数字展馆</a></li>
-            <li><a href="#heritage">非遗保护</a></li>
-            <li><a href="#music">传统音乐</a></li>
-            <li><a href="#opera">戏曲艺术</a></li>
-            <li><a href="#calligraphy">书法篆刻</a></li>
-            <li><a href="#architecture">建筑文化</a></li>
-            <li><a href="#costume">民族服饰</a></li>
-            <li><a href="#martial">武术健身</a></li>
-            <li><a href="#calendar">天文历法</a></li>
-            <li><a href="#diet">饮食文化</a></li>
-            <li><a href="#education">教育传承</a></li>
-            <li><a href="#digital">数字文创</a></li>
-            <li><a href="#overseas">国际传播</a></li>
-        </ul>
-    </nav>
-
-    <div id="searchBox">
-        <input type="text" id="searchInput" placeholder="输入关键词搜索...">
-        <button onclick="searchSite()" style="padding:4px 10px; background:#c00; color:white; border:none">搜索</button>
+  <header>
+    <h1 class="site-title"><sup>出</sup>尘<sup>入</sup>画</h1>
+    <div class="filters">
+      <select id="province">
+        <option value="">省份</option>
+      </select>
+      <select id="city">
+        <option value="">城市</option>
+      </select>
+      <select id="year">
+        <option value="">年份</option>
+      </select>
+      <select id="season">
+        <option value="">季节</option>
+      </select>
+      <input type="text" id="search" placeholder="行到水穷处，坐看云起时">
     </div>
-
-    <h1>经纶承古道，南斗焕华章</h1>
-
-<h2 id="philosophy">哲学思想</h2>
-<div class="grid">
-    <a href="https://ctext.org/zh" target="_blank">中国哲学书电子化计划（3万部古籍）</a>
-    <a href="https://www.ncpssd.org" target="_blank">国家哲学社会科学文献中心</a>
-    <a href="http://philosophychina.cssn.cn" target="_blank">中国社会科学院哲学研究所</a>
-    <a href="https://phil.pku.edu.cn" target="_blank">北京大学哲学系官网</a>
-    <a href="http://www.guoxue123.com" target="_blank">国学导航（古籍注释版）</a>
-    <a href="https://www.marxists.org/chinese" target="_blank">中文马克思主义文库</a>
-    <a href="https://www.rujiazg.com" target="_blank">儒家网（当代儒学研究）</a>
-    <a href="http://www.daoinfo.org" target="_blank">道家思想数字馆</a>
-</div>
-
-<h2 id="literature">文学典籍</h2>
-<div class="grid">
-    <a href="https://www.shidianguji.com" target="_blank">识典古籍（北大×字节跳动古籍库）</a>
-    <a href="http://read.nlc.cn/thematDataSearch/toGujiIndex" target="_blank">国家图书馆古籍资源库</a>
-    <a href="https://so.gushiwen.cn/guwen" target="_blank">古诗文网典籍库</a>
-    <a href="https://www.guoxuemi.com" target="_blank">国学迷（2万部典籍）</a>
-    <a href="http://www.ancientbooks.cn" target="_blank">中华书局籍合网</a>
-    <a href="https://new.shuge.org" target="_blank">书格古籍图书馆</a>
-    <a href="http://gj.zdic.net" target="_blank">汉典古籍（经史子集分类）</a>
-    <a href="https://www.gujiguan.com" target="_blank">古籍馆（10万种典藏）</a>
-    <a href="http://122.200.75.13" target="_blank">殆知阁（经史子集检索）</a>
-    <a href="https://www.guoxuedashi.net" target="_blank">国学大师典籍库</a>
-</div>
-
-<h2 id="art">艺术传承</h2>
-<div class="grid">
-    <a href="https://www.ihchina.cn" target="_blank">中国非物质文化遗产数字博物馆</a>
-    <a href="https://minghuaji.dpm.org.cn" target="_blank">故宫名画记（692幅高清藏品）</a>
-    <a href="https://www.e-dunhuang.com" target="_blank">数字敦煌（30个全景洞窟）</a>
-    <a href="http://ich.tju.edu.cn" target="_blank">非遗学网（学科建设平台）</a>
-    <a href="https://www.zgysyjy.org.cn" target="_blank">中国艺术研究院非遗保护中心</a>
-    <a href="https://m.fyrhome.cn" target="_blank">非遗人之家（保护协会主办）</a>
-    <a href="http://g2.ltfc.net/home" target="_blank">中华珍宝馆（晋代至今书画）</a>
-    <a href="https://www.shuge.org" target="_blank">书格古籍图书馆（艺术类善本）</a>
-    <a href="https://www.yiyi.cn" target="_blank">艺驿网（传承人社区）</a>
-    <a href="https://www.chnmuseum.cn" target="_blank">中国国家博物馆数字展厅</a>
-</div>
-
-<h2 id="craft">传统技艺</h2>
-<div class="grid">
-    <a href="https://www.ihchina.cn" target="_blank">中国非物质文化遗产数字博物馆</a>
-    <a href="http://ich.tju.edu.cn" target="_blank">非遗学网（学科建设平台）</a>
-    <a href="https://m.fyrhome.cn" target="_blank">非遗人之家（保护协会主办）</a>
-    <a href="https://www.zgysyjy.org.cn" target="_blank">中国艺术研究院非遗保护中心</a>
-    <a href="https://www.shouyiwang.com" target="_blank">中国手艺网（赛事活动平台）</a>
-    <a href="http://read.nlc.cn/thematDataSearch/toGujiIndex" target="_blank">国家图书馆古籍资源库</a>
-    <a href="http://www.minwang.com.cn" target="_blank">中国民族文化资源库</a>
-    <a href="http://g2.ltfc.net/home" target="_blank">中华珍宝馆（传统艺术典藏）</a>
-    <a href="https://new.shuge.org" target="_blank">书格古籍图书馆（技艺类善本）</a>
-    <a href="http://gj.zdic.net" target="_blank">汉典古籍（技艺分类检索）</a>
-</div>
-
-<h2 id="festival">节庆民俗</h2>
-<div class="grid">
-    <a href="http://zgwhw.com" target="_blank">中国民俗文化网（传统节日数据库）</a>
-    <a href="https://www.ihchina.cn" target="_blank">中国非物质文化遗产数字博物馆</a>
-    <a href="http://www.minsuyanjiu.cn" target="_blank">民俗研究网（学术资源平台）</a>
-    <a href="https://www.chinesefolklore.org.cn" target="_blank">中国民俗学网（北师大主办）</a>
-    <a href="http://www.minwang.com.cn" target="_blank">中国民族文化资源库（56民族节庆）</a>
-    <a href="http://www.mswhyj.com" target="_blank">中国民俗文化研究院（非遗传承）</a>
-    <a href="http://read.nlc.cn/thematDataSearch/toGujiIndex" target="_blank">国家图书馆节庆古籍库</a>
-    <a href="https://www.zgysyjy.org.cn" target="_blank">中国艺术研究院非遗保护中心</a>
-</div>
-	
-<h2 id="medicine">中医智慧</h2>
-<div class="grid">
-    <a href="https://www.cntcm.com.cn/" target="_blank">中国中医药网</a>
-    <a href="https://www.kanguji.com/" target="_blank">千年医典古籍库</a>
-    <a href="https://www.zysj.com.cn/" target="_blank">中医世家</a>
-    <a href="https://www.zhonghuadiancang.com/" target="_blank">中华典藏</a>
-    <a href="https://www.tcmdoc.cn/" target="_blank">中医资源网</a>
-    <a href="https://www.zhongyiyao.net/" target="_blank">中医中药网</a>
-    <a href="https://www.guyimima.com/" target="_blank">古医密码</a>
-    <a href="https://www.bolanyishu.com/" target="_blank">博览医书</a>
-    <a href="http://www.jingfangzhijia.cn/" target="_blank">经方之家</a>
-    <a href="https://www.zhiyuanzhongyi.com/" target="_blank">知源中医</a>
-</div>
-
-<h2 id="museum">数字展馆</h2>
-<div class="grid">
-    <a href="https://www.dpm.org.cn/数字文物库.html" target="_blank">故宫数字文物库</a>
-    <a href="http://virtual.vizen.cn/" target="_blank">国家博物馆虚拟展厅</a>
-    <a href="https://www.e-dunhuang.com/" target="_blank">数字敦煌</a>
-    <a href="https://www.shanghaimuseum.net/mu-frontend/web/html5/index.html" target="_blank">上海博物馆云展厅</a>
-    <a href="https://www.hnmuseum.com/online-exhibitions" target="_blank">湖南省博云展览</a>
-    <a href="https://www.3dmuseum.cn/" target="_blank">中国三维数字博物馆</a>
-    <a href="https://www.chnmuseum.cn/zs/zpzg/" target="_blank">中国考古遗址数字展</a>
-    <a href="https://www.baike.com/museum/" target="_blank">百度百科数字博物馆</a>
-    <a href="https://www.ltfc.net/" target="_blank">中华珍宝馆（高清字画）</a>
-    <a href="https://www.360yunzhanguan.com/" target="_blank">云展馆平台</a>
-    <a href="https://www.greatwallcloud.com/" target="_blank">云游长城</a>
-    <a href="https://www.sxhm.com/online/" target="_blank">陕西历史博物馆数字展</a>
-</div>
-
-<h2 id="heritage">非遗保护</h2>
-<div class="grid">
-    <a href="https://www.ihchina.cn/" target="_blank">中国非物质文化遗产网</a>
-    <a href="http://ich.tju.edu.cn/" target="_blank">非遗学网</a>
-    <a href="https://m.fyrhome.cn/" target="_blank">非遗人之家</a>
-    <a href="https://www.zgysyjy.org.cn/" target="_blank">中国艺术研究院非遗保护</a>
-</div>
-
-<h2 id="music">传统音乐</h2>
-<div class="grid">
-    <a href="https://www.china1901.com/" target="_blank">中国音网</a>
-    <a href="http://s.china1904.com/" target="_blank">中华戏曲老唱片库</a>
-    <a href="https://musicology.cn/" target="_blank">中国音乐学网</a>
-    <a href="http://www.guqin.net/" target="_blank">中国古琴网</a>
-    <a href="https://www.xjmuqam.com/" target="_blank">新疆木卡姆数字馆</a>
-    <a href="http://www.huain.cn/" target="_blank">民族音乐网</a>
-    <a href="https://www.ccom.edu.cn/yxzy/" target="_blank">中央音乐学院传统音乐库</a>
-    <a href="http://www.guzheng.cn/" target="_blank">中国古筝网</a>
-</div>
-
-<h2 id="opera">戏曲艺术</h2>
-<div class="grid">
-    <a href="http://www.zhongguojingju.com/" target="_blank">中国京剧艺术网</a>
-    <a href="https://www.kunqu.org/" target="_blank">中国昆曲网</a>
-    <a href="http://www.guangdongyueju.com/" target="_blank">广东粤剧院</a>
-    <a href="https://www.yueju.net/" target="_blank">中国越剧网</a>
-    <a href="http://www.huangmeixi.cn/" target="_blank">黄梅戏艺术网</a>
-    <a href="https://www.sichuanopera.org/" target="_blank">川剧艺术中心</a>
-    <a href="http://www.pingju.com.cn/" target="_blank">中国评剧网</a>
-    <a href="http://www.zhongguoxiqu.com/" target="_blank">中国戏曲文化数据库</a>
-</div>
-
-<h2 id="calligraphy">书法篆刻</h2>
-<div class="grid">
-    <a href="http://www.ccagov.com.cn/" target="_blank">中国书法家协会</a>
-    <a href="https://www.dpm.org.cn/shufa.html" target="_blank">故宫博物院书法藏品</a>
-    <a href="http://www.xlys.org/" target="_blank">西泠印社官网</a>
-    <a href="https://www.ltfc.net/" target="_blank">中华珍宝馆（高清法帖）</a>
-    <a href="http://www.shufazidian.com/" target="_blank">书法字典在线查询</a>
-    <a href="https://www.shufakongjian.com/" target="_blank">书法空间碑帖库</a>
-    <a href="http://www.zhuanke.com/" target="_blank">篆刻网</a>
-    <a href="https://www.shufajiangtang.com/" target="_blank">书法讲堂</a>
-    <a href="http://www.shufabaike.com/" target="_blank">书法百科</a>
-    <a href="https://www.9610.com/" target="_blank">历代书法碑帖大全</a>
-    <a href="http://www.shufami.com/" target="_blank">书法迷社区</a>
-    <a href="https://www.nlc.cn/dsb_zyyfw/gj/gjbt/" target="_blank">国家图书馆碑帖菁华</a>
-</div>
-
-<h2 id="architecture">建筑文化</h2>
-<div class="grid">
-    <a href="https://www.gujianchina.cn/" target="_blank">古建中国</a>
-    <a href="https://www.ncha.gov.cn/" target="_blank">国家文物局古建平台</a>
-    <a href="https://www.dpm.org.cn/" target="_blank">故宫博物院古建专题</a>
-    <a href="https://www.archdaily.cn/cn" target="_blank">ArchDaily中文版</a>
-    <a href="https://edu.zhulong.com/" target="_blank">筑龙学社</a>
-    <a href="http://www.abbs.com.cn/" target="_blank">ABBS建筑论坛</a>
-</div>
-
-<h2 id="costume">民族服饰</h2>
-<div class="grid">
-    <a href="http://www.biftmuseum.com/nation" target="_blank">北京服装学院民族服饰博物馆</a>
-    <a href="https://www.wenzang.cn/" target="_blank">国风纹样数据库</a>
-    <a href="https://digicol.dpm.org.cn/" target="_blank">故宫数字文物库</a>
-    <a href="https://www.dpm.org.cn/" target="_blank">故宫博物院服饰专题</a>
-    <a href="https://www.chinasilkmuseum.com/" target="_blank">中国丝绸博物馆</a>
-    <a href="https://www.chinaethnicmuseum.com/" target="_blank">中国民族博物馆</a>
-    <a href="https://www.ynmuseum.org/" target="_blank">云南民族博物馆</a>
-    <a href="https://www.gzsmzmuseum.com/" target="_blank">贵州民族博物馆</a>
-</div>
-
-<h2 id="martial">武术健身</h2>
-<div class="grid">
-    <a href="http://www.wushu.com.cn/" target="_blank">中国武术协会官网</a>
-    <a href="https://www.shaolin.org.cn/" target="_blank">少林寺武术学院</a>
-    <a href="http://www.wudangshan.gov.cn/" target="_blank">武当武术官网</a>
-    <a href="http://www.chenjiagou.net/" target="_blank">陈氏太极拳官网</a>
-    <a href="http://www.emeiwushu.com/" target="_blank">峨眉武术官网</a>
-    <a href="https://www.iwuf.org/cn/" target="_blank">国际武术联合会</a>
-    <a href="http://www.qqgfw.com/" target="_blank">全球功夫网</a>
-</div>
-
-<h2 id="calendar">天文历法</h2>
-<div class="grid">
-    <a href="http://www.lamost.org" target="_blank">拉莫斯天文望远镜官网</a>
-    <a href="http://www.cnsa.gov.cn" target="_blank">中国国家航天局</a>
-    <a href="http://www.astronomy.com.cn" target="_blank">牧夫天文论坛</a>
-    <a href="https://www.ntsc.ac.cn" target="_blank">中国科学院国家授时中心</a>
-    <a href="https://digicol.dpm.org.cn" target="_blank">故宫历法文物库</a>
-    <a href="http://www.pmo.ac.cn" target="_blank">紫金山天文台</a>
-</div>
-
-<h2 id="diet">饮食文化</h2>
-<div class="grid">
-    <a href="https://www.xiachufang.com/" target="_blank">下厨房</a>
-    <a href="https://www.douguo.com/" target="_blank">豆果美食</a>
-    <a href="https://www.meishichina.com/" target="_blank">美食天下</a>
-    <a href="https://www.xiangha.com/" target="_blank">香哈网</a>
-</div>
-
-<h2 id="education">教育传承</h2>
-<div class="grid">
-    <a href="http://read.nlc.cn" target="_blank">国家图书馆教育门户</a>
-    <a href="https://basic.smartedu.cn/" target="_blank">国家中小学智慧教育平台</a>
-    <a href="http://www.moe.gov.cn/" target="_blank">教育部官网</a>
-    <a href="https://www.zxxk.com/" target="_blank">学科网</a>
-    <a href="https://www.dearedu.com/" target="_blank">第二教育网</a>
-    <a href="https://www.21cnjy.com/" target="_blank">21世纪教育网</a>
-    <a href="http://www.eol.cn/" target="_blank">中国教育在线</a>
-    <a href="http://www.jyb.com.cn/" target="_blank">中国教育新闻网</a>
-    <a href="https://www.ruiwen.com/" target="_blank">瑞文网</a>
-    <a href="https://www.zuowen.com/" target="_blank">中小学生作文网</a>
-</div>
-
-<h2 id="digital">数字文创</h2>
-<div class="grid">
-    <a href="https://www.dpm.org.cn/Home.html" target="_blank">故宫博物院官网</a>
-    <a href="https://digicol.dpm.org.cn/" target="_blank">故宫数字文物库</a>
-    <a href="http://g2.ltfc.net/home" target="_blank">中华珍宝馆</a>
-    <a href="http://zhongguose.com/" target="_blank">中国色传统色谱</a>
-    <a href="http://wenzang.art/" target="_blank">纹藏传统纹样库</a>
-    <a href="https://www.ihchina.cn/" target="_blank">中国非物质文化遗产网</a>
-    <a href="https://ctext.org/zhs" target="_blank">中国哲学书电子化计划</a>
-    <a href="https://colors.ichuantong.cn/" target="_blank">传统颜色手册</a>
-</div>
-
-<h2 id="overseas">国际传播</h2>
-<div class="grid">
-    <a href="http://www.cngoesglobal.com" target="_blank">中华文化国际传播网</a>
-    <a href="https://en.chinaculture.org" target="_blank">中国文化网</a>
-    <a href="http://www.cvntv.net" target="_blank">中国文化视窗网</a>
-    <a href="http://www.heychinaculture.com" target="_blank">外文局文化传播网</a>
-</div>
-
-    <footer>
-        <p>© jingnan.net 经南弘 - 经纶承古道，南斗焕华章</p>
-    </footer>
-
-    <script>
-        function searchSite() {
-            const keyword = document.getElementById('searchInput').value.toLowerCase()
-            document.querySelectorAll('.grid a').forEach(link => {
-                link.style.display = link.textContent.toLowerCase().includes(keyword) ? 'block' : 'none'
-            })
-        }
-        document.getElementById('searchInput').addEventListener('keypress', e => {
-            if(e.key === 'Enter') searchSite()
-        })
-    </script>
+  </header>
+  <main id="gallery"></main>
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <div id="caption"></div>
+  </div>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
