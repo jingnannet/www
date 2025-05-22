@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>出尘入画 chenhua.net 行到水穷处，坐看云起时</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>镜观南天 jingnan.net 观自观南观天</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1 class="site-title"><sup>出</sup>尘<sup>入</sup>画</h1>
-    <div class="filters">
-      <select id="province">
-        <option value="">省份</option>
-      </select>
-      <select id="city">
-        <option value="">城市</option>
-      </select>
-      <select id="year">
-        <option value="">年份</option>
-      </select>
-      <select id="season">
-        <option value="">季节</option>
-      </select>
-      <input type="text" id="search" placeholder="行到水穷处，坐看云起时">
+    <header>
+        <h1>镜<sup>观</sup>南<sup>天</sup></h1>
+        <div class="filters">
+            <select id="province">
+                <option value="">省份</option>
+            </select>
+            <select id="city">
+                <option value="">城市</option>
+            </select>
+            <select id="year">
+                <option value="">年份</option>
+            </select>
+            <select id="season">
+                <option value="">季节</option>
+                <option value="spring">春季</option>
+                <option value="summer">夏季</option>
+                <option value="autumn">秋季</option>
+                <option value="winter">冬季</option>
+            </select>
+            <input type="text" id="search" placeholder="搜索...">
+        </div>
+    </header>
+    <main class="gallery"></main>
+    <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div class="caption"></div>
     </div>
-  </header>
-  <main id="gallery"></main>
-  <div id="modal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modal-img">
-    <div id="caption"></div>
-  </div>
-  <script src="data.js"></script>
-  <script src="script.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

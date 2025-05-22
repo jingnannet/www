@@ -1,70 +1,190 @@
 const photos = [
-  {
-    src: "photos/20230715浙江杭州龙井村.jpg",
-    province: "浙江",
-    city: "杭州",
-    location: "龙井村",
-    date: "2023-07-15",
-    description: "杭州龙井村茶园风光"
-  },
-  {
-    src: "photos/20231016浙江杭州宝石山西湖苏堤.jpg",
-    province: "浙江",
-    city: "杭州",
-    location: "宝石山、西湖苏堤",
-    date: "2023-10-16",
-    description: "从宝石山俯瞰西湖苏堤"
-  },
-  {
-    src: "photos/20231016浙江杭州西湖城隍阁.jpg",
-    province: "浙江",
-    city: "杭州",
-    location: "西湖城隍阁",
-    date: "2023-10-16",
-    description: "西湖城隍阁夜景"
-  },
-  {
-    src: "photos/20240519浙江杭州西湖.jpg",
-    province: "浙江",
-    city: "杭州",
-    location: "西湖",
-    date: "2024-05-19",
-    description: "西湖春色"
-  },
-  {
-    src: "photos/20241026浙江杭州十里锒铛.jpg",
-    province: "浙江",
-    city: "杭州",
-    location: "十里锒铛",
-    date: "2024-10-26",
-    description: "十里锒铛古道徒步"
-  },
-  {
-    src: "photos/20241107江苏南京紫金山玄武湖.jpg",
-    province: "江苏",
-    city: "南京",
-    location: "紫金山、玄武湖",
-    date: "2024-11-07",
-    description: "紫金山俯瞰玄武湖全景"
-  },
-  {
-    src: "photos/20241121江苏苏州吴中十峰.jpg",
-    province: "江苏",
-    city: "苏州",
-    location: "吴中十峰",
-    date: "2024-11-21",
-    description: "吴中十峰徒步路线"
-  },
-  {
-    src: "photos/20241208江苏镇江南山.jpg",
-    province: "江苏",
-    city: "镇江",
-    location: "南山",
-    date: "2024-12-08",
-    description: "镇江南山秋色"
-  }
+    {
+        src: "2025/上海_20250522090348_36.jpg",
+        province: "上海",
+        city: "上海",
+        year: "2025",
+        season: "spring",
+        date: "2025年3月15日"
+    },
+    {
+        src: "2025/上海_20250522090348_37.jpg",
+        province: "上海",
+        city: "上海",
+        year: "2025",
+        season: "spring",
+        date: "2025年3月16日"
+    },
+    {
+        src: "2025/广东广州_20250522090349_41.jpg",
+        province: "广东",
+        city: "广州",
+        year: "2025",
+        season: "summer",
+        date: "2025年6月20日"
+    },
+    {
+        src: "2025/福建福州_20250522090348_38.jpg",
+        province: "福建",
+        city: "福州",
+        year: "2025",
+        season: "autumn",
+        date: "2025年9月10日"
+    },
+    {
+        src: "2025/上海_20250522090349_24.jpg",
+        province: "上海",
+        city: "上海",
+        year: "2025",
+        season: "spring",
+        date: "2025年3月"
+    },
+    {
+        src: "2025/上海_20250522090349_25.jpg",
+        province: "上海",
+        city: "上海",
+        year: "2025",
+        season: "spring",
+        date: "2025年3月"
+    },
+    {
+        src: "2025/上海_20250522090349_28.jpg",
+        province: "上海",
+        city: "上海",
+        year: "2025",
+        season: "spring",
+        date: "2025年3月"
+    },
+    {
+        src: "2025/上海_20250522090349_30.jpg",
+        province: "上海",
+        city: "上海",
+        year: "2025",
+        season: "spring",
+        date: "2025年3月"
+    },
+    {
+        src: "2025/上海_20250522090349_31.jpg",
+        province: "上海",
+        city: "上海",
+        year: "2025",
+        season: "spring",
+        date: "2025年3月"
+    },
+    {
+        src: "2025/上海_20250522090349_32.jpg",
+        province: "上海",
+        city: "上海",
+        year: "2025",
+        season: "spring",
+        date: "2025年3月"
+    },
+    {
+        src: "2025/上海_20250522090349_33.jpg",
+        province: "上海",
+        city: "上海",
+        year: "2025",
+        season: "spring",
+        date: "2025年3月"
+    },
+    {
+        src: "2025/上海_20250522090349_34.jpg",
+        province: "上海",
+        city: "上海",
+        year: "2025",
+        season: "spring",
+        date: "2025年3月"
+    },
+    {
+        src: "2025/上海_20250522090349_35.jpg",
+        province: "上海",
+        city: "上海",
+        year: "2025",
+        season: "spring",
+        date: "2025年3月"
+    },
+    {
+        src: "2025/广东广州_20250522090348_44.jpg",
+        province: "广东",
+        city: "广州",
+        year: "2025",
+        season: "summer",
+        date: "2025年6月"
+    },
+    {
+        src: "2025/广东广州_20250522090349_45.jpg",
+        province: "广东",
+        city: "广州",
+        year: "2025",
+        season: "summer",
+        date: "2025年6月"
+    },
+    {
+        src: "2025/福建福州_20250522090348_39.jpg",
+        province: "福建",
+        city: "福州",
+        year: "2025",
+        season: "autumn",
+        date: "2025年9月"
+    },
+    {
+        src: "2025/福建福州_20250522090349_26.jpg",
+        province: "福建",
+        city: "福州",
+        year: "2025",
+        season: "autumn",
+        date: "2025年9月"
+    },
+    {
+        src: "2025/福建福州_20250522090349_27.jpg",
+        province: "福建",
+        city: "福州",
+        year: "2025",
+        season: "autumn",
+        date: "2025年9月"
+    },
+    {
+        src: "2025/福建福州_20250522090349_29.jpg",
+        province: "福建",
+        city: "福州",
+        year: "2025",
+        season: "autumn",
+        date: "2025年9月"
+    },
+    {
+        src: "2025/福建福州_20250522090349_40.jpg",
+        province: "福建",
+        city: "福州",
+        year: "2025",
+        season: "autumn",
+        date: "2025年9月"
+    },
+    {
+        src: "2025/福建福州_20250522090349_42.jpg",
+        province: "福建",
+        city: "福州",
+        year: "2025",
+        season: "autumn",
+        date: "2025年9月"
+    },
+    {
+        src: "2025/福建福州_20250522090349_43.jpg",
+        province: "福建",
+        city: "福州",
+        year: "2025",
+        season: "autumn",
+        date: "2025年9月"
+    },
 ];
 
 const provinces = [...new Set(photos.map(p => p.province))];
 const cities = [...new Set(photos.map(p => p.city))];
-const dates = [...new Set(photos.map(p => p.date.substring(0,7)))];
+const years = [...new Set(photos.map(p => p.year))];
+
+// 导出数据
+window.photoData = {
+    photos,
+    provinces,
+    cities,
+    years
+};
